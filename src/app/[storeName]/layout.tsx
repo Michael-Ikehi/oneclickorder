@@ -111,7 +111,7 @@ export async function generateMetadata({ params }: { params: Promise<{ storeName
 
   // Clean, short title and description
   const title = `${store.name} | FoodHutz`;
-  const description = `Order from ${store.name}${locationText}. Order now! 🚀${ratingText}`;
+  const description = `Order from ${store.name}${locationText}. Fast Delivery! 🚀${ratingText}`;
 
   return {
     title,

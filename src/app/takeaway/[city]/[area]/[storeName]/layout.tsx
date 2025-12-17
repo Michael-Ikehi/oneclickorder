@@ -126,7 +126,7 @@ export async function generateMetadata({
 
     // Clean, short title and description
     const title = `${data.name} | FoodHutz`;
-    const description = `Order from ${data.name}${locationText}. Order now! 🚀${ratingText}`;
+    const description = `Order from ${data.name}${locationText}. Fast Delivery! 🚀${ratingText}`;
 
     // URLs
     const canonicalUrl = `${siteUrl}/${data.slug || storeName}`;
