@@ -1,0 +1,84 @@
+import Image from 'next/image';
+import React, { useState } from 'react';
+import { FaPlus } from 'react-icons/fa';
+
+export type FreeCardProps = {
+  name: string;
+  description: string;
+  onAddClick?: () => void;
+  img: string;
+  price: string | number;
+  currency?: string;
+};
+
+const baseImage = process.env.NEXT_PUBLIC_IMAGE_BASE_URL;
+const defaultImage = '/images/placeholder.png';
+
+const truncateText = (
+  text: string,
+  wordLimit: number
+): { truncated: string; fullText: string | null } => {
+  if (!text || typeof text !== 'string') {
+    return { truncated: '', fullText: null };
+  }
+  const words = text.split(' ');
+  if (words.length > wordLimit) {
+    return {
+      truncated: words.slice(0, wordLimit).join(' ') + '...',
+      fullText: text,
+    };
+  }
+  return { truncated: text, fullText: null };
+};
+
+const BodyCards = ({ name, description, onAddClick, img, price, currency }: FreeCardProps) => {
+  const { truncated, fullText } = truncateText(description, 4);
+  const [showFullText, setShowFullText] = useState(false);
+  const [imageSrc, setImageSrc] = useState(`${baseImage}/uploads/product/${img}`);
+
+  return (
+    <div
+      className="max-w-[400px] rounded-xs md:p-2 shadow-md flex flex-col border-gray-200 border-1 cursor-pointer"
+      onClick={onAddClick}
+    >
+      {/* Image Section */}
+      <div className="relative w-full h-[100px] md:h-[148px] overflow-hidden rounded-t-sm">
+        <Image
+          src={imageSrc}
+          alt="food"
+          fill
+          className="object-cover"
+          onError={() => setImageSrc(defaultImage)}
+        />
+      </div>
+
+      {/* Content Section */}
+      <div className=" flex p-2 md:p-0 flex-col justify-between flex-grow">
+        <h1 className="text-sm font-bold text-[#141111] leading-[150%]">{name}</h1>
+        {description && (
+          <p
+            className="text-xs text-[#574D4D] mt-1 leading-[16px] font-normal"
+            //  onMouseEnter={() => setShowFullText(true)}
+            //   onMouseLeave={() => setShowFullText(false)}
+            onClick={() => setShowFullText((prev) => !prev)}
+          >
+            {showFullText && fullText ? fullText : truncated}
+          </p>
+        )}
+        <div className="flex items-center mt-7 justify-between">
+          <p className="text-md text-[#342E2E] font-bold leading-[100%]">
+            {currency} {price}
+          </p>
+          <button
+            className="bg-[#DC2626] text-[#E6E4E4] flex py-2 px-3 text-xs gap-x-2 rounded-md items-center cursor-pointer"
+            onClick={onAddClick}
+          >
+            <FaPlus size={14} /> Add
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default BodyCards;

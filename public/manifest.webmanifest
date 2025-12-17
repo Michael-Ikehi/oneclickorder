@@ -1,0 +1,34 @@
+{
+  "name": "FoodHutz - Order Food & Groceries",
+  "short_name": "FoodHutz",
+  "description": "Order food, groceries, and more from local restaurants and stores with fast delivery.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#DC2626",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-GB",
+  "categories": ["food", "shopping", "lifestyle"],
+  "icons": [
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "FoodHutz Homepage"
+    },
+    {
+      "src": "/screenshots/store.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Restaurant Menu"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
+

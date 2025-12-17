@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://localhost:3000</loc><lastmod>2025-08-20T12:32:12.164Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://localhost:3000/takeaway</loc><lastmod>2025-08-20T12:32:12.166Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://localhost:3000/takeaway/london/norbury-london/amala-joint</loc><lastmod>2025-08-20T12:32:13.061Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://localhost:3000/takeaway/london/norbury-london/Chineserestaurant</loc><lastmod>2025-08-20T12:32:13.061Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://localhost:3000/takeaway/london/norbury-london/foodhutz</loc><lastmod>2025-08-20T12:32:13.061Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://localhost:3000/takeaway/london/balham/the-garden-meal</loc><lastmod>2025-08-20T12:32:13.061Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://localhost:3000/takeaway/london/balham/zone-restaurant</loc><lastmod>2025-08-20T12:32:13.061Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://localhost:3000/takeaway/lagos-mainland/lagos-mainland/lagos-restaurant</loc><lastmod>2025-08-20T12:32:13.061Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://localhost:3000/takeaway/lagos-mainland/lagos-mainland/james-waller</loc><lastmod>2025-08-20T12:32:13.061Z</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+</urlset>
